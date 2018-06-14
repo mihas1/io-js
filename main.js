@@ -169,7 +169,7 @@ var jsVersion = {
     document.querySelector('.pagination').style.display = '';
 
     if (prev != '') {
-      prevBtn.innerHTML = prev[0] + ' - ' + prev[1];
+      prevBtn.innerHTML = (prev[0] + 1) + ' - ' + prev[1];
       prevBtn.style.display = '';
     } else {
       prevBtn.innerHTML = '';
@@ -177,7 +177,7 @@ var jsVersion = {
     }
 
     if (current != '') {
-      currentBtn.innerHTML = current[0] + ' - ' + current[1];
+      currentBtn.innerHTML = (current[0] + 1) + ' - ' + current[1];
       currentBtn.style.display = '';
     } else {
       currentBtn.innerHTML = '';
@@ -185,7 +185,7 @@ var jsVersion = {
     }
 
     if (next != '') {
-      nextBtn.innerHTML = next[0] + ' - ' + next[1];
+      nextBtn.innerHTML = (next[0] + 1) + ' - ' + next[1];
       nextBtn.style.display = '';
     } else {
       nextBtn.innerHTML = '';
