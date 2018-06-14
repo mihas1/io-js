@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: #122C3F;
+}
+
+.container {
+  width: 1024px;
+  max-width: calc(100% - 20px);
+  margin: 10px auto;
+}
+
+.list-block {
+  border-radius: 5px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
+}
+
+.search {
+  background-image: url(resources/images/search.svg);
+  background-size: 26px 26px;
+  background-repeat: no-repeat;
+  background-position: 25px 50%;
+  padding: 30px 30px 30px 60px;
+  height: 120px;
+  line-height: 120px;
+  border: none;
+  background-color: #E9EEF3;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  outline: none;
+  font-size: 20px;
+}
+
+.authors {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+.authors li {
+  height: 120px;
+  padding: 5px;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.authors li:nth-of-type(even) {
+  background-color: #F4F6F9;
+}
+
+.number {
+  min-width: 25px;
+}
+
+.authors_cred {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  padding: 0 5px 0 87px;
+  position: relative;
+}
+
+.label {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 67px;
+  height: 67px;
+  border-radius: 50%;
+  line-height: 67px;
+  text-align: center;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  box-shadow: 0 0 10px 0px black;
+}
+
+.name,
+.pageviews {
+  font-size: 24px;
+  font-weight: bold;
+  color: #16374a;
+}
+
+.count_pub {
+  color: #b2b2b2;
+}
+
+.pageviews {
+  padding: 0 40px;
+}
+
+.star {
+  content: '';
+  box-sizing: content-box;
+  width: 38px;
+  height: 70px;
+  padding: 0 20px;
+  background-size: 38px 70px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.star_1 {
+  background-image: url(resources/medals/1st.svg);
+}
+
+.star_2 {
+  background-image: url(resources/medals/2nd.svg);
+}
+
+.star_3 {
+  background-image: url(resources/medals/3rd.svg);
+}
+
+.pagination {
+  text-align: center;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.pagination a {
+  color: #fff;
+}
+
+.prev,
+.next {
+  content: '';
+  font-size: 0;
+  width: 17px;
+  height: 30px;
+  padding: 0 10px;
+  box-sizing: content-box;
+  background-image: url(resources/images/arrow.svg);
+  background-size: 17px 30px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.next {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
